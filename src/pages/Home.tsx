@@ -9,7 +9,6 @@ import HowToUse from '../components/HowToUse';
 import FAQ from '../components/FAQ';
 import LegalNotice from '../components/LegalNotice';
 import { motion } from 'motion/react';
-import { Star, Shield, Smartphone } from 'lucide-react';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -59,61 +58,105 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <Header />
-      
+
       <main className="flex-1">
         <AdBanner label="Patrocinado" className="mt-4 mb-0" />
 
-        <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+        <section
+          id="download"
+          className="relative pt-10 pb-24 md:pt-16 md:pb-32 overflow-hidden bg-gradient-to-b from-white to-slate-50"
+        >
           <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-4">
-                Baixar Vídeos com <br/>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand-secondary">TokDrop</span>
+              <div className="inline-flex items-center gap-2 bg-green-50 border border-green-100 text-green-700 px-4 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-widest mb-8">
+                +100.000 downloads realizados
+              </div>
+
+              <h1 className="text-4xl md:text-7xl font-black text-gray-950 tracking-tight leading-[1.05] mb-6">
+                TikTok Video Downloader <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand via-pink-400 to-brand-secondary">
+                  Fast, Free & HD
+                </span>
               </h1>
-              
-              <p className="text-gray-500 text-sm md:text-base max-w-lg mx-auto mb-10 font-medium">
-                Baixe vídeos públicos em alta qualidade de forma rápida e simples. Cole o link abaixo e comece agora.
+
+              <p className="text-gray-500 text-sm md:text-lg max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
+                Baixe vídeos públicos do TikTok em MP4 sem complicação.
+                Ferramenta online, rápida, gratuita e compatível com celular,
+                tablet e computador.
               </p>
 
               <DownloadForm onDownload={handleDownload} isLoading={isLoading} />
-              
+
               <div id="result-area">
                 <ResultBox result={result} error={error} onReset={handleReset} />
               </div>
 
-              <div className="mt-20 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                <div className="flex items-center justify-center gap-2 text-gray-400 font-bold text-[10px] uppercase tracking-widest border border-gray-100 rounded-lg py-3 bg-white">
-                   <Shield size={14} className="text-brand" />
-                   <span>Seguro</span>
+              <div className="mt-16 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                  <div className="text-2xl font-black text-gray-900">100K+</div>
+                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                    Downloads
+                  </div>
                 </div>
-                <div className="flex items-center justify-center gap-2 text-gray-400 font-bold text-[10px] uppercase tracking-widest border border-gray-100 rounded-lg py-3 bg-white">
-                   <Smartphone size={14} className="text-brand-secondary" />
-                   <span>Mobile</span>
+
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                  <div className="text-2xl font-black text-gray-900">99%</div>
+                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                    Taxa de sucesso
+                  </div>
                 </div>
-                <div className="flex items-center justify-center gap-2 text-gray-400 font-bold text-[10px] uppercase tracking-widest border border-gray-100 rounded-lg py-3 bg-white">
-                   <Star size={14} className="text-yellow-400" />
-                   <span>Grátis</span>
+
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                  <div className="text-2xl font-black text-gray-900">HD</div>
+                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                    Qualidade máxima
+                  </div>
                 </div>
-                <div className="flex items-center justify-center gap-2 text-gray-400 font-bold text-[10px] uppercase tracking-widest border border-gray-100 rounded-lg py-3 bg-white">
-                   <Star size={14} className="text-green-400" />
-                   <span>HD Qualidade</span>
+
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                  <div className="text-2xl font-black text-gray-900">Free</div>
+                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                    Uso ilimitado
+                  </div>
                 </div>
               </div>
             </motion.div>
           </div>
+
+          <div className="absolute top-20 left-0 -translate-x-1/2 w-72 h-72 bg-brand/10 blur-[120px] rounded-full pointer-events-none"></div>
+          <div className="absolute bottom-10 right-0 translate-x-1/2 w-96 h-96 bg-brand-secondary/10 blur-[140px] rounded-full pointer-events-none"></div>
         </section>
 
         <AdBanner label="Publicidade" />
+
         <HowToUse />
+
         <AdBanner label="Anúncio" />
+
+        <section className="py-24 bg-white">
+          <div className="max-w-5xl mx-auto px-6 text-center">
+            <h2 className="text-3xl md:text-5xl font-black text-gray-950 tracking-tight mb-6">
+              Baixar vídeo do TikTok nunca foi tão simples
+            </h2>
+
+            <p className="text-gray-500 text-base md:text-lg max-w-3xl mx-auto leading-relaxed font-medium">
+              O TokDrop foi criado para quem precisa salvar vídeos públicos de
+              forma rápida, prática e sem instalar aplicativos. Basta copiar o
+              link do TikTok, colar na ferramenta e iniciar o download.
+            </p>
+          </div>
+        </section>
+
         <FAQ />
+
         <LegalNotice />
+
         <AdBanner label="Fim de Conteúdo" className="mb-16" />
       </main>
 
