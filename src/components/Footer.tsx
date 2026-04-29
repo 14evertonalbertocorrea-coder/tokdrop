@@ -15,11 +15,11 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-bold text-gray-900 mb-3">Páginas úteis</h4>
+          <h4 className="font-bold text-gray-900 mb-3">Conteúdo</h4>
           <div className="flex flex-col gap-2 text-sm text-gray-500">
-            <Link to="/how-to-download-tiktok-video">Como baixar vídeo do TikTok</Link>
-            <Link to="/tiktok-downloader-mobile">Downloader para celular</Link>
-            <Link to="/download-tiktok-faq">Perguntas frequentes</Link>
+            <a href="/#download">Baixar vídeo</a>
+            <a href="/#como-usar">Como usar</a>
+            <a href="/#faq">Perguntas frequentes</a>
           </div>
         </div>
 
