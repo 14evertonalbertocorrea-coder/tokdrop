@@ -6,39 +6,132 @@ export default function Terms() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 max-w-4xl mx-auto px-4 py-20">
-        <h1 className="text-4xl font-display font-bold mb-8">Termos de Uso</h1>
-        <div className="prose prose-slate max-w-none space-y-6 text-slate-600">
-          <p>Ao acessar o site TikTokSave, você concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis.</p>
 
-          <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">1. Uso da Licença</h2>
-          <p>
-            É concedida permissão para baixar temporariamente uma cópia de um vídeo através do TikTokSave apenas para visualização pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode:
-          </p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Modificar ou copiar os materiais de terceiros sem autorização;</li>
-            <li>Usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);</li>
-            <li>Tentar descompilar ou fazer engenharia reversa de qualquer software contido no site TikTokSave;</li>
-            <li>Remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou</li>
-            <li>Transferir os materiais para outra pessoa ou 'espelhar' os materiais em qualquer outro servidor sem permissão.</li>
-          </ul>
+      <main className="flex-1 bg-slate-50">
+        <section className="max-w-4xl mx-auto px-6 py-20">
+          <div className="bg-white rounded-3xl shadow-sm border border-slate-100 p-8 md:p-12">
+            <h1 className="text-4xl font-black text-slate-900 mb-4">
+              Termos de Uso
+            </h1>
 
-          <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">2. Isenção de Responsabilidade</h2>
-          <p>
-            Os materiais no site TikTokSave são fornecidos 'como estão'. TikTokSave não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos.
-          </p>
+            <p className="text-sm text-slate-400 mb-10">
+              Última atualização: 29/04/2026
+            </p>
 
-          <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">3. Limitações</h2>
-          <p>
-            Em nenhum caso o TikTokSave ou seus fornecedores serão responsáveis por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em TikTokSave.
-          </p>
+            <div className="space-y-8 text-slate-600 leading-relaxed">
+              <p>
+                Ao acessar e utilizar o TokDrop, o usuário concorda com os
+                presentes Termos de Uso, bem como com todas as leis e normas
+                aplicáveis.
+              </p>
 
-          <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">4. Conteúdo de Terceiros</h2>
-          <p>
-            O TikTokSave não revisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso por TikTokSave do site. O uso de qualquer site vinculado é por conta e risco do usuário.
-          </p>
-        </div>
+              <h2 className="text-2xl font-bold text-slate-900">
+                1. Objetivo da ferramenta
+              </h2>
+
+              <p>
+                O TokDrop oferece uma ferramenta online destinada a facilitar o
+                acesso e o download de conteúdos públicos disponibilizados em
+                plataformas de terceiros mediante solicitação direta do usuário.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                2. Responsabilidade do usuário
+              </h2>
+
+              <p>
+                O usuário é integralmente responsável pelo uso que faz da
+                ferramenta, incluindo a verificação de permissões, direitos
+                autorais, autorizações de uso e conformidade com as políticas da
+                plataforma de origem do conteúdo.
+              </p>
+
+              <p>
+                O TokDrop não incentiva, promove ou se responsabiliza por uso
+                indevido de conteúdos protegidos por direitos autorais.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                3. Disponibilidade do serviço
+              </h2>
+
+              <p>
+                O serviço é fornecido de forma gratuita e pode sofrer
+                interrupções, manutenções, alterações técnicas ou limitações sem
+                aviso prévio.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                4. Propriedade intelectual
+              </h2>
+
+              <p>
+                Todo o conteúdo visual, identidade, marca, design, textos e
+                estrutura do TokDrop pertencem aos seus responsáveis legais,
+                sendo proibida a reprodução sem autorização.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                5. Limitação de responsabilidade
+              </h2>
+
+              <p>
+                O TokDrop não garante disponibilidade contínua, ausência de
+                falhas, compatibilidade universal ou funcionamento ininterrupto.
+                O uso da ferramenta é feito por conta e risco do usuário.
+              </p>
+
+              <p>
+                Não nos responsabilizamos por perdas, danos, bloqueios de conta,
+                problemas em dispositivos, violações de terceiros ou quaisquer
+                consequências decorrentes do uso do serviço.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                6. Links e serviços de terceiros
+              </h2>
+
+              <p>
+                O TokDrop pode depender de recursos, plataformas, conteúdos,
+                APIs ou conexões externas de terceiros para funcionamento. Não
+                possuímos controle sobre políticas ou disponibilidade desses
+                serviços.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                7. Publicidade
+              </h2>
+
+              <p>
+                Este site poderá exibir anúncios patrocinados, banners,
+                conteúdos promocionais e programas de monetização de terceiros.
+                Não nos responsabilizamos por produtos ou serviços anunciados por
+                parceiros externos.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                8. Alterações nos termos
+              </h2>
+
+              <p>
+                Reservamo-nos o direito de modificar estes Termos de Uso a
+                qualquer momento. O uso contínuo da plataforma após alterações
+                representa concordância automática do usuário.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900">
+                9. Contato oficial
+              </h2>
+
+              <p>
+                Para dúvidas legais ou administrativas, o contato oficial é:
+                brgamesrjppp@gmail.com.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
+
       <Footer />
     </div>
   );
