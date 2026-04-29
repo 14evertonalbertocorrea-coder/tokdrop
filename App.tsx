@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
@@ -9,7 +9,7 @@ import DownloadFAQ from './pages/DownloadFAQ';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -19,6 +19,6 @@ export default function App() {
         <Route path="/tiktok-downloader-mobile" element={<MobileDownloader />} />
         <Route path="/download-tiktok-faq" element={<DownloadFAQ />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
