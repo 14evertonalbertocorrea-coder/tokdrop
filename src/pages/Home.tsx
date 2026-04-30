@@ -62,11 +62,9 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        <AdBanner label="Patrocinado" className="mt-4 mb-0" />
-
         <section
           id="download"
-          className="relative pt-10 pb-24 md:pt-16 md:pb-32 overflow-hidden bg-gradient-to-b from-white to-slate-50"
+          className="relative pt-8 pb-20 md:pt-12 md:pb-24 overflow-hidden bg-gradient-to-b from-white to-slate-50"
         >
           <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
             <motion.div
@@ -74,18 +72,18 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 bg-green-50 border border-green-100 text-green-700 px-4 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-widest mb-8">
+              <div className="inline-flex items-center gap-2 bg-green-50 border border-green-100 text-green-700 px-4 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-widest mb-6">
                 +127.483 downloads realizados com sucesso
               </div>
 
-              <h1 className="text-4xl md:text-7xl font-black text-gray-950 tracking-tight leading-[1.05] mb-6">
+              <h1 className="text-4xl md:text-7xl font-black text-gray-950 tracking-tight leading-[1.05] mb-5">
                 TikTok Video Downloader <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand via-pink-400 to-brand-secondary">
                   Fast, Free & HD
                 </span>
               </h1>
 
-              <p className="text-gray-500 text-sm md:text-lg max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
+              <p className="text-gray-500 text-sm md:text-lg max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
                 Baixe vídeos públicos do TikTok em MP4 sem complicação.
                 Ferramenta online, rápida, gratuita e compatível com celular,
                 tablet e computador.
@@ -97,44 +95,44 @@ export default function Home() {
                 <ResultBox result={result} error={error} onReset={handleReset} />
               </div>
 
-              <div className="mt-16 max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-5">
-                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+              <div className="mt-12 max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-4 px-3">
                   <div className="text-2xl font-black text-gray-900">127K+</div>
-                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-gray-400">
                     Downloads
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-4 px-3">
                   <div className="text-2xl font-black text-gray-900">99.2%</div>
-                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-gray-400">
                     Taxa de sucesso
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-4 px-3">
                   <div className="text-2xl font-black text-gray-900">8</div>
-                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-gray-400">
                     Online agora
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-4 px-3">
                   <div className="text-2xl font-black text-gray-900">HD</div>
-                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-gray-400">
                     Qualidade máxima
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-4 px-3">
                   <div className="text-2xl font-black text-gray-900">24h</div>
-                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                  <div className="text-[10px] uppercase tracking-widest font-bold text-gray-400">
                     Disponível
                   </div>
                 </div>
               </div>
 
-              <div className="mt-10 flex flex-wrap justify-center gap-3 text-[11px] font-bold uppercase tracking-wider text-slate-500">
+              <div className="mt-8 flex flex-wrap justify-center gap-3 text-[10px] font-bold uppercase tracking-wider text-slate-500">
                 <span className="bg-white border border-slate-200 px-4 py-2 rounded-full">SSL Secure</span>
                 <span className="bg-white border border-slate-200 px-4 py-2 rounded-full">No Login Required</span>
                 <span className="bg-white border border-slate-200 px-4 py-2 rounded-full">Unlimited Use</span>
@@ -162,87 +160,37 @@ export default function Home() {
 
               <p className="text-gray-500 text-base md:text-lg max-w-3xl mx-auto leading-relaxed font-medium">
                 O TokDrop foi criado para quem precisa salvar vídeos públicos de
-                forma rápida, prática e sem instalar aplicativos. Basta copiar o
-                link do TikTok, colar na ferramenta e iniciar o download.
+                forma rápida, prática e sem instalar aplicativos.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <article className="bg-slate-50 border border-slate-100 rounded-3xl p-7">
                 <h3 className="text-xl font-black text-slate-900 mb-4">
-                  Como baixar vídeos do TikTok sem marca d'água
+                  Sem marca d'água
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Para baixar um vídeo público do TikTok, copie o link do vídeo,
-                  cole no campo principal do TokDrop e clique no botão de baixar.
-                  A ferramenta processa o endereço e gera um link MP4 para salvar
-                  no celular ou computador.
+                  Processamento rápido para gerar vídeo MP4 pronto para salvar.
                 </p>
               </article>
 
               <article className="bg-slate-50 border border-slate-100 rounded-3xl p-7">
                 <h3 className="text-xl font-black text-slate-900 mb-4">
-                  TikTok Downloader para Android e iPhone
+                  Compatível com celular
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  O TokDrop funciona direto no navegador do celular, sem instalar
-                  aplicativos. Você pode usar no Android, iPhone, tablet ou PC,
-                  mantendo uma experiência rápida, simples e responsiva.
+                  Android, iPhone, tablet e computador sem instalar aplicativos.
                 </p>
               </article>
 
               <article className="bg-slate-50 border border-slate-100 rounded-3xl p-7">
                 <h3 className="text-xl font-black text-slate-900 mb-4">
-                  Download online grátis em MP4
+                  Uso gratuito
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  A ferramenta é gratuita e foi criada para facilitar o download
-                  de vídeos públicos em formato MP4. Não exigimos login, senha ou
-                  instalação de extensões no navegador.
+                  Ferramenta online gratuita para downloads públicos ilimitados.
                 </p>
               </article>
-            </div>
-          </div>
-        </section>
-
-        <AdBanner label="Publicidade" />
-
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-5xl mx-auto px-6">
-            <h2 className="text-3xl md:text-5xl font-black text-gray-950 tracking-tight mb-10 text-center">
-              Guia rápido para usar o TokDrop
-            </h2>
-
-            <div className="space-y-6">
-              <div className="bg-white border border-slate-100 rounded-3xl p-7 shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  1. Copie o link do vídeo
-                </h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Abra o TikTok, escolha um vídeo público e use a opção de
-                  compartilhar para copiar o link do conteúdo.
-                </p>
-              </div>
-
-              <div className="bg-white border border-slate-100 rounded-3xl p-7 shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  2. Cole no campo principal
-                </h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Volte ao TokDrop, cole o link copiado no campo de download e
-                  clique no botão para processar o vídeo.
-                </p>
-              </div>
-
-              <div className="bg-white border border-slate-100 rounded-3xl p-7 shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  3. Baixe o arquivo MP4
-                </h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Quando o vídeo for processado, clique em baixar MP4 para salvar
-                  o arquivo no seu dispositivo.
-                </p>
-              </div>
             </div>
           </div>
         </section>
