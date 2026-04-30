@@ -3,21 +3,29 @@
 
   <url>
     <loc>https://tokdrop-tau.vercel.app/</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://tokdrop-tau.vercel.app/privacy-policy</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://tokdrop-tau.vercel.app/terms</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://tokdrop-tau.vercel.app/contact</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
