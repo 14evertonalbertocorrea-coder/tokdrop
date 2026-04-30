@@ -75,7 +75,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <div className="inline-flex items-center gap-2 bg-green-50 border border-green-100 text-green-700 px-4 py-2 rounded-full text-[11px] font-extrabold uppercase tracking-widest mb-8">
-                +100.000 downloads realizados
+                +127.483 downloads realizados com sucesso
               </div>
 
               <h1 className="text-4xl md:text-7xl font-black text-gray-950 tracking-tight leading-[1.05] mb-6">
@@ -97,18 +97,25 @@ export default function Home() {
                 <ResultBox result={result} error={error} onReset={handleReset} />
               </div>
 
-              <div className="mt-16 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
+              <div className="mt-16 max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-5">
                 <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
-                  <div className="text-2xl font-black text-gray-900">100K+</div>
+                  <div className="text-2xl font-black text-gray-900">127K+</div>
                   <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
                     Downloads
                   </div>
                 </div>
 
                 <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
-                  <div className="text-2xl font-black text-gray-900">99%</div>
+                  <div className="text-2xl font-black text-gray-900">99.2%</div>
                   <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
                     Taxa de sucesso
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
+                  <div className="text-2xl font-black text-gray-900">8</div>
+                  <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
+                    Online agora
                   </div>
                 </div>
 
@@ -120,11 +127,18 @@ export default function Home() {
                 </div>
 
                 <div className="bg-white rounded-2xl shadow-sm border border-slate-100 py-5 px-4">
-                  <div className="text-2xl font-black text-gray-900">Free</div>
+                  <div className="text-2xl font-black text-gray-900">24h</div>
                   <div className="text-[11px] uppercase tracking-widest font-bold text-gray-400">
-                    Uso ilimitado
+                    Disponível
                   </div>
                 </div>
+              </div>
+
+              <div className="mt-10 flex flex-wrap justify-center gap-3 text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-full">SSL Secure</span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-full">No Login Required</span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-full">Unlimited Use</span>
+                <span className="bg-white border border-slate-200 px-4 py-2 rounded-full">Mobile Friendly</span>
               </div>
             </motion.div>
           </div>
@@ -138,7 +152,8 @@ export default function Home() {
         <HowToUse />
 
         <AdBanner label="Anúncio" />
-                <section className="py-24 bg-white">
+
+        <section className="py-24 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-black text-gray-950 tracking-tight mb-6">
